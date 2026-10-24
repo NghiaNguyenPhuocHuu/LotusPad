@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LotusPad pen spike</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f4f6f8; --fg:#1b2430; --ink:#1b2430; --card:#fffffff0; --bd:#cfd7df }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12171d; --fg:#e6ecf2; --ink:#e6ecf2; --card:#1b232cf0; --bd:#34414e } }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--fg); font:14px/1.45 -apple-system, system-ui, sans-serif; overflow:hidden }
+  canvas { position:fixed; inset:0; width:100%; height:100%; touch-action:none; cursor:crosshair }
+  #hud { position:fixed; top:12px; left:12px; width:330px; background:var(--card); border:1px solid var(--bd); border-radius:10px; padding:12px; font-variant-numeric:tabular-nums }
+  #hud h1 { margin:0 0 6px; font-size:15px }
+  #hud dl { margin:0; display:grid; grid-template-columns:auto 1fr; gap:2px 12px }
+  #hud dt { color:#6f7b88 } #hud dd { margin:0; text-align:right }
+  #verdict { margin:10px 0 8px; font-weight:600 }
+  button { font:inherit; color:var(--fg); background:var(--bg); border:1px solid var(--bd); border-radius:7px; padding:5px 10px; cursor:pointer }
+  textarea { display:none; width:100%; height:150px; margin-top:8px; box-sizing:border-box; font:12px ui-monospace, Menlo, monospace; background:var(--bg); color:var(--fg); border:1px solid var(--bd); border-radius:7px }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud">
+  <h1>Pen spike</h1>
+  <dl>
+    <dt>Device</dt><dd id="kind">-</dd>
+    <dt>Pressure</dt><dd id="pressure">-</dd>
+    <dt>Tilt X / Y</dt><dd id="tilt">-</dd>
+    <dt>Trackpad force</dt><dd id="force">-</dd>
+    <dt>Events (pen / mouse / touch)</dt><dd id="counts">0 / 0 / 0</dd>
+  </dl>
+  <div id="verdict">Draw anywhere with your pen or trackpad.</div>
+  <button id="clear">Clear</button> <button id="show">Show report</button> <button id="copy">Copy report</button>
+  <textarea id="out" readonly></textarea>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>

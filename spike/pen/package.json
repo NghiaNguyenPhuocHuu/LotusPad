@@ -1,0 +1,12 @@
+{
+  "name": "lotuspad-pen-spike",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}
