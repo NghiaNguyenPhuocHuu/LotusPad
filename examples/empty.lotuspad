@@ -1,0 +1,11 @@
+{
+  "format": "lotuspad",
+  "version": 1,
+  "id": "doc-empty",
+  "title": "Empty book",
+  "created": "2026-10-23T10:00:00Z",
+  "modified": "2026-10-23T10:00:00Z",
+  "mode": "book",
+  "surfaces": [{ "id": "page-1", "size": [794, 1123], "background": "ruled", "objects": [] }],
+  "ranges": []
+}

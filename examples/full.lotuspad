@@ -1,0 +1,27 @@
+{
+  "format": "lotuspad",
+  "version": 1,
+  "id": "doc-full",
+  "title": "Sales sketch",
+  "created": "2026-10-23T10:00:00Z",
+  "modified": "2026-10-23T10:30:00+00:00",
+  "mode": "book",
+  "surfaces": [
+    {
+      "id": "page-1",
+      "size": [794, 1123],
+      "background": "grid",
+      "objects": [
+        { "type": "text", "id": "t1", "x": 48, "y": 64, "width": 300, "text": "Monthly sales\nJan 120\nFeb 150" },
+        {
+          "type": "stroke", "id": "s1", "color": "ink", "width": 3,
+          "raw": [[400, 80, 0.5], [598, 84, 0.6], [602, 218, 0.6], [396, 222, 0.5], [401, 82, 0.5]],
+          "tidy": { "kind": "rect", "points": [[398, 80], [600, 80], [600, 220], [398, 220], [398, 80]] }
+        },
+        { "type": "chart", "id": "c1", "x": 48, "y": 300, "width": 400, "height": 240, "rangeId": "r1", "chartType": "bar" }
+      ]
+    }
+  ],
+  "ranges": [{ "id": "r1", "surfaceId": "page-1", "source": { "type": "text", "objectId": "t1", "start": 14, "end": 29 } }],
+  "futureField": { "kept": true }
+}

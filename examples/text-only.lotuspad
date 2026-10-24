@@ -1,0 +1,18 @@
+{
+  "format": "lotuspad",
+  "version": 1,
+  "id": "doc-text",
+  "title": "Shopping list",
+  "created": "2026-10-23T10:00:00Z",
+  "modified": "2026-10-23T10:05:00Z",
+  "mode": "book",
+  "surfaces": [
+    {
+      "id": "page-1",
+      "size": [816, 1056],
+      "background": "blank",
+      "objects": [{ "type": "text", "id": "t1", "x": 48, "y": 64, "width": 600, "text": "Milk\nEggs\nCoffee" }]
+    }
+  ],
+  "ranges": []
+}
